@@ -26,9 +26,9 @@ namespace WPFTreeViewAdv
             TreeItems.Add(Root2);
             Model Root3 = new Model() { Header = "Contacts", Image = "Images/contacts.png", ImagePosition = "Right" };
             TreeItems.Add(Root3);
-            Model Root4 = new Model() { Header = "Deleted Items", Image = "Images/deleted.png", ImagePosition = "Right" };
+            Model Root4 = new Model() { Header = "Deleted Items", Image = "Images/deleted.png", ImagePosition = "Left" };
             TreeItems.Add(Root4);
-            Model Root5 = new Model() { Header = "Drafts", Image = "Images/drafts.png", ImagePosition = "Right" };
+            Model Root5 = new Model() { Header = "Drafts", Image = "Images/drafts.png", ImagePosition = "Left" };
             TreeItems.Add(Root5);
             return TreeItems;
         }
