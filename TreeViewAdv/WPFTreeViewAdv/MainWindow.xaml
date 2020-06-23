@@ -9,10 +9,16 @@
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <syncfusion:TreeViewAdv x:Name="TreeViewAdv" ItemsSource="{Binding TreeItems}" Width="150" Height="250">
+        <syncfusion:TreeViewAdv x:Name="TreeViewAdv" ItemsSource="{Binding TreeItems}" Width="150" Height="150">
             <syncfusion:TreeViewAdv.DataContext>
                 <local:ViewModel/>
             </syncfusion:TreeViewAdv.DataContext>
+
+            <syncfusion:TreeViewAdv.ItemTemplate>
+                <HierarchicalDataTemplate>
+                    <TextBlock Text="{Binding Header}"/>
+                </HierarchicalDataTemplate>
+            </syncfusion:TreeViewAdv.ItemTemplate>
 
             <syncfusion:TreeViewAdv.ItemContainerStyle>
                 <Style TargetType="syncfusion:TreeViewItemAdv">
@@ -26,12 +32,6 @@
                     </Style.Triggers>
                 </Style>
             </syncfusion:TreeViewAdv.ItemContainerStyle>
-
-            <syncfusion:TreeViewAdv.ItemTemplate>
-                <HierarchicalDataTemplate>
-                    <TextBlock Text="{Binding Header}"/>
-                </HierarchicalDataTemplate>
-            </syncfusion:TreeViewAdv.ItemTemplate>
         </syncfusion:TreeViewAdv>
     </Grid>
-</Window>
+</Window>    
