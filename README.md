@@ -86,3 +86,4 @@ public class Model
     public string ImagePosition { get; set; }
 }
 ```
+![Customize the icons](CustomizeIcons.png)
